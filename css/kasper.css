@@ -366,7 +366,7 @@ header nav .form i {
     content: "\f390";
     margin-right: 15px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .design .text {
         width: 100%;
     }
