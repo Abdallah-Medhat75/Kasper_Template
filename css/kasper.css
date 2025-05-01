@@ -341,7 +341,7 @@ header nav .form i {
 .design img {
     position: absolute;
     bottom: -50px;
-    left: 0;
+    left: 150px;
     z-index: 2;
 }
 .design .text {
