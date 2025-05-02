@@ -17,6 +17,7 @@
 }
 html {
     scroll-behavior: smooth;
+    scrollbar-color: var(--mainColor) white;
 }
 body {
     font-family: "Open Sans", sans-serif;
