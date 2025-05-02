@@ -877,4 +877,66 @@ header nav .form i {
     padding: 15px 30px;
     text-decoration: none;
 }
-  /* End Pricing */
+/* End Pricing */
+/* Start Subscribe */
+.subscribe {
+    background-image: url("../imgs/subscribe.jpg");
+    background-size: cover;
+    color: white;
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+    position: relative;
+}
+.subscribe .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+    z-index: 2;
+}
+.subscribe form {
+    display: flex;
+    border: 1px solid white;
+    width: 500px;
+    max-width: 100%;
+}
+.subscribe form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 90px;
+}
+.subscribe form input {
+    color: inherit;
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 50%;
+}
+.subscribe form input[type="email"] {
+    background-color: transparent;
+    padding-left: 0;
+    caret-color: var(--mainColor);
+    width: calc(100% - 130px)
+}
+.subscribe form ::placeholder {
+    color: inherit;
+}
+.subscribe form input[type="submit"] {
+    width: 130px;
+    background-color: var(--mainColor);
+    font-size: 20px;
+}
+.subscribe p {
+    line-height: 2;
+}
+@media (max-width: 991px) {
+    .subscribe .container {
+        flex-direction: column;
+    }
+    .subscribe p {
+        text-align: center;
+    }
+}
+/* End Subscribe */
