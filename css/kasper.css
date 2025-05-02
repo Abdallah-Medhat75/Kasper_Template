@@ -940,3 +940,135 @@ header nav .form i {
     }
 }
 /* End Subscribe */
+/* Start Contact */
+.contact-us {
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+}
+.contact-us .content {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us form {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-us form > * {
+    margin-bottom: 30px;;
+    border: 3px solid #eee;
+    outline: none;
+    padding: 20px;
+}
+.contact-us form textarea {
+    height: 200px;
+}
+.contact-us form input[type="submit"] {
+    background-color: var(--mainColor);
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    width: fit-content;
+    align-self: flex-end;
+}
+.contact-us .info {
+    flex-basis: 25%;
+}
+.contact-us h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.contact-us p {
+    color: var(--weightColor);
+    margin-bottom: 10px;
+}
+.contact-us h4:nth-of-type(2) {
+    margin-top: 90px;
+}
+.contact-us address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--weightColor);
+    line-height: 2;
+}
+@media (max-width: 767px) {
+    .contact-us .content {
+        flex-direction: column-reverse;
+    }
+    .contact-us .info {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .contact-us h4:nth-of-type(2) {
+        margin-top: 50px;
+    }
+    .contact-us form input[type="submit"] {
+        width: 100%;
+    }
+}
+/* End Contact */
+/* Start Small Features */
+a.scroll-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    position: fixed;
+    background-color: var(--mainColor);
+    color: white;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1000;
+}
+/* End Small Features */
+/* Start Footer */
+footer {
+    background-image: url("../imgs/subscribe.jpg");
+    background-size: cover;
+    padding-top: calc(var(--sectionPadding) / 2);
+    padding-bottom: calc(var(--sectionPadding) / 2);
+    position: relative;
+}
+footer .overlay {
+    background-color: rgb(0 0 0 / 70%);
+}
+footer p:nth-of-type(1) {
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+footer .container {
+    color: white;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+footer ul {
+    display: flex;
+    font-size: 22px;
+    gap: 35px;
+}
+footer span {
+    color: var(--mainColor);
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+    footer p:nth-of-type(2) {
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.9;
+    }
+}
+/* End Footer */
