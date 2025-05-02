@@ -516,3 +516,39 @@ header nav .form i {
     }
 }
 /* End About */
+/* Start Statistics */
+.stat {
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+    background-image: url("../imgs/stats.png");
+    position: relative;
+}
+.stat .stat-content {
+    background-color: var(--transparentColor);
+    color: white;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    text-align: center;
+    gap: 50px;
+    position: relative;
+    z-index: 5;
+}
+.stat .stat-content i {
+    background-color: black;
+    width: 35px;
+    aspect-ratio: 1 / 1;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+.stat .stat-content .number {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+/* End Statistics */
