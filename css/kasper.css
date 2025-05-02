@@ -730,3 +730,42 @@ header nav .form i {
     }    
 }
 /* End skills */
+/* Start Quote */
+.quote {
+    background-image: url("../imgs/quote.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+    position: relative;
+}
+.quote .overlay {
+    background-color: rgb(0 0 0 / 75%);
+}
+.quote .container {
+    position: relative;
+    z-index: 2;
+}
+.quote q {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.quote q::before {
+    content: "\f10e";
+    transform: translate(-10px, -10px);
+}
+.quote q::after {
+    content: "\f10d";
+    transform: translate(10px, -10px);
+}
+.quote q::before,
+.quote q::after {
+    font-family: "FontAwesome";
+    right: 0;
+    display: inline-block;
+    font-size: 19px;
+    top: 0;
+}
+/* End Quote */
