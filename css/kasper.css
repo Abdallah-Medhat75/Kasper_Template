@@ -552,3 +552,181 @@ header nav .form i {
     margin-bottom: 25px;
 }
 /* End Statistics */
+/* Start skills */
+.skills {
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+}
+.skills .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills .container > div > h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.skills .container > div > p {
+    color: var(--weightColor);
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.skills .profile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.skills img {
+    width: 100px;
+    height: 100px; /* Other Solve Than Elzero Solve */
+    border-radius: 50%;
+    margin-right: 50px;
+}
+.skills .profile .text-content {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #CCC;
+    line-height: 1.8;
+}
+.skills .testim .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.skills .testim .bullets li {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.skills .testim .bullets li:hover {
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+}  
+.skills .profile span {
+    color: var(--weightColor);
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.our-skills .skills-stat .boxing {
+    margin-bottom: 40px;
+}
+.our-skills .skills-stat h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.our-skills .skills-stat span {
+    display: block;
+    height: 30px;
+    position: relative;
+}
+.our-skills .skills-stat span::before {
+    background-color: black;
+    color: white;
+    width: 40px;
+    aspect-ratio: 2 / 1;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: -45px;
+    left: 90%;
+    transform: translateX(-50%);
+}
+.our-skills .skills-stat span::after {
+    content: "";
+    width: 0;
+    border-width: 7px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: -17px;
+    transform: translateX(-50%);
+}
+.our-skills .skills-stat .boxing:nth-child(1) span {
+    background-image: linear-gradient(to right, 
+                                        var(--mainColor) 90%,
+                                        #dedadc 90%);
+}
+.our-skills .skills-stat .boxing:nth-child(1) span::before {
+    content: attr(data);
+    left: 90%;
+}
+.our-skills .skills-stat .boxing:nth-child(1) span::after {
+    left: 90%;
+}
+.our-skills .skills-stat .boxing:nth-child(2)  span {
+    background-image: linear-gradient(to right, 
+                                        var(--mainColor) 85%,
+                                        #dedadc 85%);
+}
+.our-skills .skills-stat .boxing:nth-child(2) span::before {
+    content: attr(data);
+    left: 85%;
+}
+.our-skills .skills-stat .boxing:nth-child(2) span::after {
+    left: 85%;
+}
+.our-skills .skills-stat .boxing:nth-child(3) span {
+    background-image: linear-gradient(to right, 
+                                        var(--mainColor) 80%,
+                                        #dedadc 80%);
+}
+.our-skills .skills-stat .boxing:nth-child(3) span::before {
+    content: attr(data);
+    left: 80%;
+}
+.our-skills .skills-stat .boxing:nth-child(3) span::after {
+    left: 80%;
+}
+.our-skills .skills-stat .boxing:nth-child(4) span {
+    background-image: linear-gradient(to right, 
+                                        var(--mainColor) 90%,
+                                        #dedadc 90%);
+}
+.our-skills .skills-stat .boxing:nth-child(4) span::before {
+    content: attr(data);
+    left: 90%;
+}
+.our-skills .skills-stat .boxing:nth-child(4) span::after {
+    left: 90%;
+}
+@media (max-width: 767px) {
+    .skills .text {
+        margin-bottom: 70px;
+    }
+    .skills .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .skills .container > div {
+        flex-basis: 100%;
+    }
+    .skills .container p {
+        margin-bottom: 10px;
+    }
+    .skills .profile span {
+        text-align: center;
+    }
+}
+@media (min-width: 992px) {
+    .skills .container > div {
+        flex-basis: 45%;
+    }    
+}
+/* End skills */
