@@ -41,7 +41,6 @@ header nav ul.active {
     position: absolute;
     top: 100%;
     left: 0;
-
 }
 .container {
     padding-left: 15px;
@@ -125,8 +124,9 @@ header {
     width: 100%;
     left: 0;
     position: absolute;
-    /* position: fixed; */
+    position: fixed;
     z-index: 3;
+    transition: background-color var(--mainTransition);
 }
 header .container {
     min-height: 97px;
@@ -1025,7 +1025,7 @@ header nav .form i {
 /* End Contact */
 /* Start Small Features */
 a.scroll-to-top {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-size: 22px;
@@ -1037,6 +1037,7 @@ a.scroll-to-top {
     border-radius: 4px;
     right: 30px;
     bottom: 30px;
+    transition: calc(var(--mainTransition) + 0.25s);
     z-index: 1000;
 }
 /* End Small Features */
