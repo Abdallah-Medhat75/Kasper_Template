@@ -1,7 +1,7 @@
 // Start Selecting Elements
 let scrollAnchor = document.querySelector(".scroll-to-top");
 let header = document.querySelector("header");
-let headerUnderline = document.querySelector("header .container::before");
+// let headerUnderline = document.querySelector("header .container::before");
 let clickIcon = document.querySelector("header nav .icons");
 let disUL = document.querySelector("header nav ul");
 scrollAnchor.style.visibility = "hidden";
@@ -9,6 +9,9 @@ scrollAnchor.style.opacity = "0";
 let services = document.querySelector(".services");
 let bigStatDiv = document.querySelector(".stat");
 let statDivs = document.querySelectorAll(".stat .box div");
+let filterUlLis = document.querySelectorAll(".portfolio ul.selection li");
+let filterDivs = document.querySelectorAll(".portfolio .image-select");
+// console.log(document.querySelector(`.portfolio .image-select${filterUlLis[0].dataset.img}`));
 // End Selecting Elements
 clickIcon.onclick = function () {
     disUL.classList.toggle("active");
@@ -49,3 +52,18 @@ window.onscroll = function () {
         header.style.backgroundColor = "transparent";
     }
 }
+filterUlLis.forEach((li) => {
+    li.onclick = function () {
+        filterUlLis.forEach((li) => {
+            li.classList.remove("active");
+            this.classList.add("active");
+        })
+        filterDivs.forEach((div) => {
+            div.style.display = "none";
+        })
+        let targetDivs = document.querySelectorAll(`.portfolio .image-select${this.dataset.img}`);
+        targetDivs.forEach((div) => {
+            div.style.display = "block";
+        })
+    }
+});

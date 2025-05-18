@@ -427,7 +427,9 @@ header nav .form i {
     margin-left: 20px;
     padding: 10px 20px;
     cursor: pointer;
+    transition: 0.3s;
 }
+.portfolio ul li.active,
 .portfolio ul li:hover {
     background-color: var(--mainColor);
     color: white;
@@ -437,6 +439,8 @@ header nav .form i {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 .portfolio .portfolio-content .image-select {
+    margin-right: auto;
+    margin-left: auto;
     overflow: hidden;
     position: relative;
 }
@@ -462,6 +466,8 @@ header nav .form i {
 .portfolio .portfolio-content img {
     transition: var(--mainTransition);
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     z-index: -1;
 }
 .portfolio .portfolio-content .image-select:hover img {
